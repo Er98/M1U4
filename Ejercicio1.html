@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const nombre = prompt('Ingrese su nombre:', '');
+const metros = parseInt(prompt('Ingrese los metros que desea recorrer:' , ''));
+
+if (Number.isNaN(metros)){
+    document.write('Valor invalido');
+} else if (metros <= 1000){
+    document.write('Debera ir a pie');
+} else if (metros <= 10000){
+    document.write('Debera ir en bicicleta');
+} else if (metros <= 30000){
+    document.write('Debera ir en colectivo');
+} else if (metros >= 30000 , metros <= 100000){
+    document.write('Debera ir en auto');
+} else if (metros >= 100000){
+    document.write('Debera ir en avion');
+}
+
+
+    </script>
+
+</body>
+</html>
